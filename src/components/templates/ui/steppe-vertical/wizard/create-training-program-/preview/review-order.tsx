@@ -1,6 +1,6 @@
 import React from 'react'
 import { useFormikContext } from 'formik'
-import { Typography, Grid } from '@material-ui/core'
+import { Grid } from '@mui/material'
 import ProductDetails from './product-details'
 import ShippingDetails from './shipping-details'
 

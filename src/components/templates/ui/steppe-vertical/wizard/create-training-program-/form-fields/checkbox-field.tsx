@@ -1,7 +1,7 @@
 import React from 'react'
 import { at } from 'lodash'
 import { FieldHookConfig, useField } from 'formik'
-import { Checkbox, FormControl, FormControlLabel, FormControlProps, FormHelperText } from '@material-ui/core'
+import { Checkbox, FormControl, FormControlLabel, FormControlProps, FormHelperText } from '@mui/material'
 
 interface CheckboxFieldProps extends FormControlProps {
   label: string

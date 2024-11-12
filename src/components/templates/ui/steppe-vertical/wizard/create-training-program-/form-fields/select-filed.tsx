@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { at } from 'lodash'
 import { useField } from 'formik'
-import { InputLabel, FormControl, Select, MenuItem, FormHelperText, FormControlProps } from '@material-ui/core'
+import { InputLabel, FormControl, Select, MenuItem, FormHelperText, FormControlProps } from '@mui/material'
 
 interface SelectFieldProps extends FormControlProps {
   label: string

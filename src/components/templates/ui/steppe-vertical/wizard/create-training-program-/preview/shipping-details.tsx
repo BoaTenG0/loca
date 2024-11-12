@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Typography, Grid } from '@material-ui/core'
-import useStyles from './styles'
+// import { Typography, Grid } from '@mui/material'
+import {useStyles} from './styles'
 import DrawerTemplateNew from '@/components/templates/ui/dialogs/drawer-new'
 import { UpdateStates } from '@/lib/functions/update-states'
 import DrawerOpen from './drawer.open'
 import { useFormikContext } from 'formik'
+import { Grid } from '@mui/material'
 
 export type MyStates<T = any> = {
   modalOpen: boolean

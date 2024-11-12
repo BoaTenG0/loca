@@ -1,7 +1,7 @@
 import React from 'react'
 import { at } from 'lodash'
 import { useField, FieldHookConfig } from 'formik'
-import { TextField, StandardTextFieldProps, FilledTextFieldProps, OutlinedTextFieldProps } from '@material-ui/core'
+import { TextField, StandardTextFieldProps, FilledTextFieldProps, OutlinedTextFieldProps } from '@mui/material'
 
 type CustomTextFieldProps = (StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps) & {
   name: string

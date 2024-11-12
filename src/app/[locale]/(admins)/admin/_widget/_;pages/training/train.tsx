@@ -19,8 +19,6 @@ import { closeDetailsModal, openDetailsModal, openEditDetailsModal } from '../..
 import ButtonTemplate from '@/components/templates/ui/button/button'
 import IconMenuCard from '@/components/templates/ui/card/icon-menu-card'
 import InputsTemplateNew from '@/components/templates/ui/input/input'
-import ValidationWizard from '@/components/templates/ui/steppe-vertical/wizard/new'
-import HorizontalLabelPositionBelowStepper from '@/components/templates/ui/steppe-vertical/wizard/new'
 import CreateTraining from '@/components/templates/ui/steppe-vertical/wizard/create-training-program-'
 import SnackbarTemplate from '@/components/templates/ui/dialogs/snackbar'
 

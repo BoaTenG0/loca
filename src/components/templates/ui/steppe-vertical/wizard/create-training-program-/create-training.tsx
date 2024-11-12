@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Stepper, Step, StepLabel, Button, Typography, CircularProgress, StepIconProps } from '@material-ui/core'
+import { Stepper, Step, StepLabel, Button, Typography, CircularProgress, StepIconProps } from '@mui/material'
 import { Formik, Form } from 'formik'
 
 import checkoutFormModel from './form-model/preview-form-model'
@@ -67,7 +67,6 @@ interface Props {
 }
 
 export default function CheckoutPage({ onClick }: Props) {
-  const classes = useStyles()
   const [activeStep, setActiveStep] = useState(0)
   const currentValidationSchema = validationSchema[activeStep]
   const isLastStep = activeStep === steps.length - 1
@@ -100,7 +99,7 @@ export default function CheckoutPage({ onClick }: Props) {
 
   return (
     <React.Fragment>
-      <Stepper activeStep={activeStep} className={classes.stepper}>
+      <Stepper activeStep={activeStep} className="mb-6">
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel StepIconComponent={CustomStepIcon}>{label}</StepLabel>
@@ -119,7 +118,7 @@ export default function CheckoutPage({ onClick }: Props) {
                 <div
                   // className={classes.buttons}
                   style={{
-                    marginTop: activeStep > 0 && activeStep !== 3 ? 120 : 0,
+                    marginTop: activeStep > 0 && activeStep !== 3 ? 150 : 0,
                     width: '100%',
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -136,7 +135,7 @@ export default function CheckoutPage({ onClick }: Props) {
                   />
 
                   <div
-                    className={classes.wrapper}
+                    className="flex items-center relative"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -169,7 +168,7 @@ export default function CheckoutPage({ onClick }: Props) {
                     >
                       {isLastStep ? 'Submit' : 'save & continue'}
                     </Button> */}
-                    {isSubmitting && <CircularProgress size={24} className={classes.buttonProgress} />}
+                    {isSubmitting && <CircularProgress size={24} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />}
                   </div>
                 </div>
               </Form>
