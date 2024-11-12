@@ -1,0 +1,92 @@
+{
+  "name": "locagri",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev  --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "commit": "cz",
+    "prepare": "husky",
+    "release": "standard-version"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/joy": "^5.0.0-beta.48",
+    "@mui/material": "^6.1.5",
+    "@mui/x-data-grid": "^7.22.0",
+    "@react-google-maps/api": "^2.20.3",
+    "@tanstack/react-query": "^5.56.2",
+    "antd": "^5.21.5",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
+    "echarts": "^5.5.1",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.11.9",
+    "iconsax-react": "^0.0.8",
+    "input-otp": "^1.2.4",
+    "lodash": "^4.17.21",
+    "material-ui-dropzone": "^3.5.0",
+    "next": "14.2.11",
+    "next-auth": "^5.0.0-beta.25",
+    "next-intl": "^3.19.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.27.0",
+    "react-table": "^7.8.0",
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "yup": "^1.4.0",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/config": "^3.3.5",
+    "@types/crypto-js": "^4.2.2",
+    "@types/lodash": "^4.17.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-csv": "^1.1.10",
+    "@types/react-dom": "^18",
+    "@types/react-table": "^7.7.20",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
